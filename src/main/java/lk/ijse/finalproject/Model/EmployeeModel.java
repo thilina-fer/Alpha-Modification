@@ -31,7 +31,7 @@ public class EmployeeModel {
         );
     }
     public boolean deleteEmployee(String empId) throws ClassNotFoundException ,SQLException{
-        return CrudUtil.execute("DELETE FROM Employee WHERE emp_id = ?"
+        return CrudUtil.execute("DELETE FROM Employee WHERE emp_id = ?",
         empId);
     }
     public EmployeeDto searchEmployee(String empId) throws ClassNotFoundException , SQLException{
